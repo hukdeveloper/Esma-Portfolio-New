@@ -1,0 +1,101 @@
+/* Sidebar */
+
+.closemenu {
+  width: 100%;
+  /* height: 20px; */
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.logotext {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  background: #f5f4f4;
+  background: linear-gradient(to top, #ff04f7 0%, #f6ff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+}
+.ps-sidebar-container {
+  background-image: linear-gradient(
+    0deg,
+    hsl(240deg 11% 29%) 0%,
+    hsl(274deg 10% 26%) 11%,
+    hsl(312deg 10% 23%) 22%,
+    hsl(336deg 13% 22%) 33%,
+    hsl(353deg 14% 20%) 44%,
+    hsl(7deg 15% 17%) 56%,
+    hsl(18deg 17% 15%) 67%,
+    hsl(29deg 16% 12%) 78%,
+    hsl(41deg 13% 10%) 89%,
+    hsl(60deg 10% 8%) 100%
+  );
+  background: url("../../public/assets/sidebarbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff !important;
+  height: 100%;
+  /* height: 100vh !important;
+  position: static; */
+}
+.ps-sidebar-root {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+.ps-sidebar-container .MuiBox-root a {
+  color: #fff;
+  text-decoration: none;
+}
+.ps-sidebar-container .MuiBox-root a .MuiSvgIcon-root {
+  border: 1px solid #fff;
+  transition: all ease 1s;
+}
+.ps-sidebar-container .MuiBox-root a .MuiSvgIcon-root:hover {
+  background-color: #d4af37;
+  color: black !important;
+  transform: scale(1.2);
+  border: 1px solid #000;
+}
+.ps-menu-label {
+  display: flex !important;
+  align-items: center !important;
+  /* justify-content: center; */
+}
+
+.ps-menu-root {
+  margin-top: 20px !important;
+}
+
+.ps-menu-button {
+  color: #fff;
+  text-decoration: none !important;
+  transition: all ease 1s;
+  border: 1px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.ps-menu-button a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  text-decoration: none !important;
+  color: #fff;
+}
+.ps-menu-button a .MuiSvgIcon-root {
+  color: #fff;
+}
+.ps-menu-button:hover {
+  /* background-color: rgb(116, 93, 48) !important; */
+  background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+}
+.MuiPaper-root .ps-sidebar-container {
+  height: 100vh !important;
+  /* position: fixed; */
+  overflow-y: scroll;
+}
