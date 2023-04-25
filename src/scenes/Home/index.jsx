@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Profile from "../../components/Home/Profile";
 import StatBoxes from "../../components/Home/StatBoxes";
 import Latests from "../../components/Home/Latests";
+import Testimonials from "../../components/Home/Testimonials";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Profile />
       <StatBoxes />
       <Latests />
+      <Testimonials />
     </Box>
   );
 }
