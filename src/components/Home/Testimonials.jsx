@@ -116,7 +116,7 @@ export default function Testimonials() {
             </Paper>
             <CardContent
               sx={{
-                overflowY: "scroll",
+                overflowY: "auto",
               }}
             >
               <Typography
@@ -218,7 +218,7 @@ export default function Testimonials() {
             </Paper>
             <CardContent
               sx={{
-                overflowY: "scroll",
+                overflowY: "auto",
               }}
             >
               <Typography
@@ -324,7 +324,7 @@ export default function Testimonials() {
             </Paper>
             <CardContent
               sx={{
-                overflowY: "scroll",
+                overflowY: "auto",
               }}
             >
               <Typography

@@ -21,6 +21,7 @@ function App() {
         <ProSidebarProvider>
           <Sidebar />
           <Box
+            width={"100%"}
             p={"1rem 1.5rem"}
             sx={{
               height: "100vh",
