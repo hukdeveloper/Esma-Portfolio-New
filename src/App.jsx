@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./scenes/Home";
 import Portfolio from "./scenes/Portfolio";
+import Resume from "./scenes/Resume";
 
 import { ProSidebarProvider } from "react-pro-sidebar";
 import Sidebar from "./components/Sidebar";
@@ -31,6 +32,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} />
             </Routes>
           </Box>
         </ProSidebarProvider>

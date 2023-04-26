@@ -69,3 +69,36 @@ body,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 8px;
 }
+
+/* Resume */
+.styles_branding__MOWSF {
+  display: none;
+}
+.bulma_hero__9ZFpQ.bulma_is-primary__dz2Ww {
+  background: linear-gradient(to right, #000345, #0898d5);
+}
+.styles_sectionIcon__hQ-Xa {
+  background: linear-gradient(to right, #000345, #0898d5) !important;
+}
+@media screen and (max-width: 575px) {
+  .bulma_is-full__1xrES h4 {
+    font-size: 1.1rem !important;
+  }
+  .css-1l4ap9a,
+  .bulma_box__Yx0tV {
+    padding: 0 !important;
+  }
+  .styles_sectionIcon__hQ-Xa {
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 5px;
+    font-size: 15px !important;
+  }
+  .bulma_column__RLzJK {
+    padding: 0.2rem !important;
+  }
+  .styles_sectionContent__kb4d2 p {
+    padding: 0 !important;
+    font-size: 12px;
+  }
+}
