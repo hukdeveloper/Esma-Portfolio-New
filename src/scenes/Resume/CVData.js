@@ -4,11 +4,11 @@ export const CVData = {
     title: "Lecturer",
     image: "../../assets/resumeProfile.jpg",
     contacts: [
-      { type: "email", value: "john@example.com" },
-      { type: "phone", value: "+00 (123) 456 78 90" },
-      { type: "location", value: "New York" },
-      { type: "website", value: "example.com" },
-      { type: "linkedin", value: "linkedin.com/in/notexists" },
+      { type: "email", value: "esma.ramzan@kiu.edu.pk" },
+      { type: "phone", value: "+923014549789" },
+      { type: "location", value: "Gilgit-Baltistan" },
+      { type: "website", value: "msesma.vercel.app" },
+      { type: "linkedin", value: "www.linkedin.com/in/esma-ramzan-310isqz" },
     ],
   },
   sections: [
@@ -16,7 +16,7 @@ export const CVData = {
       type: "text",
       title: "Career Profile",
       content:
-        "I am Esma Ramzan, an English linguistics lecturer at Karakorum International University Gilgit Baltistan. I completed my M. Phil in Applied Linguistics at the University of Management and Technology in 2019 and have since been involved in research and the relationship between language and society. My research interests include sociolinguistics, discourse analysis, and the study of language variation and change. When I'm not teaching or researching, you can often find me writing poetry and reading a good book, hiking in the nearby mountains, and exploring the hidden beauty of northern Pakistan and its diverse culture.",
+        "Innovative Academic leader focused on engaging with students and educators to meet learning objectives and drive student progress. Demonstrating versatility in leadership approaches to acquire active participation in collaborative activities. Experience in policy development and staff management procedures positively impacting overall morale and productivity.",
       icon: "user-graduate",
     },
     {
@@ -25,76 +25,156 @@ export const CVData = {
       icon: "book-open-reader",
       items: [
         {
-          title: "Computer Engineering (BS)",
-          authority: "University",
-          authorityWebSite: "https://sample.edu",
-          rightSide: "2013 - 2017",
+          title: "MPhil Linguistics",
+          authority: "University of Management and Technology - Lahore ",
+          // authorityWebSite: "https://sample.edu",
+          rightSide: "11/2019",
         },
         {
-          title: "Some Department (PHD)",
-          authority: "Another University",
-          authorityWebSite: "https://sample.edu",
-          rightSide: "2017 - Present",
+          title: "M.A English language and Literature",
+          authority: "University of Education - Lahore",
+          rightSide: "10/2012",
+        },
+        {
+          title: "Bachelors of Education",
+          authority: "University of Education - Lahore ",
+          rightSide: "10/2012",
+        },
+        {
+          title: "Bachelors of Arts",
+          authority: "University of The Punjab - Lahore",
+          rightSide: "8/2009",
+        },
+        {
+          title: "Intermediate",
+          authority: "Govt. Jinnah Degree College – Lahore",
+          rightSide: "8/2007",
+        },
+        {
+          title: "Matriculation",
+          authority: "Govt. Girls Higher Secondary School – Lahore",
+          rightSide: "7/2005",
         },
       ],
     },
     {
       type: "experiences-list",
       title: "Experiences",
-      description: "Optional",
+      // description: "Optional",
       icon: "archive",
       items: [
         {
-          title: "Lead Software Developer",
-          company: "Some Company Example INC",
-          description: "I'm working as a lead developer yeeeey!",
-          companyWebSite: "http://somecompanyexample.com",
-          companyMeta: "",
-          datesBetween: "2017.10 - Present",
-          descriptionTags: ["Javascript", "React"],
+          title: "Lecturer Linguistics",
+          company: "Karakorum International University - Gilgit Baltistan",
+          // description: "I was warming up.",
+          // companyWebSite: "http://someexamplecompany.com",
+          // companyMeta: "SF USA",
+          datesBetween: "03/2021 - Current",
         },
         {
-          title: "Software Developer",
-          company: "Some Company Example INC",
-          description: "I'm using ReactJS and working as a front-end developer",
-          companyWebSite: "http://somecompanyexample.com",
-          companyMeta: "Little info about company",
-          datesBetween: "2016.8 - 2017.10",
+          title: "Director Operations",
+          company: "Dream to Education for all - Lahore, Pakistan",
+          // description: "I'm working as a lead developer yeeeey!",
+          // companyWebSite: "http://somecompanyexample.com",
+          // companyMeta: "",
+          datesBetween: "6/2013 - Present",
+          // descriptionTags: ["Javascript", "React"],
         },
         {
-          title: "Intern",
-          company: "Some Software Example INC",
-          description: "I was warming up.",
-          companyWebSite: "http://someexamplecompany.com",
-          companyMeta: "SF USA",
-          datesBetween: "2012.06 - 2012.10",
+          title: "English Language Teacher",
+          company: "School for Advanced Studies – Lahore, Pakistan",
+          // description: "I'm using ReactJS and working as a front-end developer",
+          // companyWebSite: "http://somecompanyexample.com",
+          // companyMeta: "Little info about company",
+          datesBetween: "10/2015 - 10/2016",
+        },
+        {
+          title: "High School English Teacher",
+          company: "High School English Teacher",
+          // description: "I was warming up.",
+          // companyWebSite: "http://someexamplecompany.com",
+          // companyMeta: "SF USA",
+          datesBetween: "10/2016 - 10/2017",
+        },
+        {
+          title: "Administrative",
+          company: "Qadam Community Trust – Lahore, Pakistan",
+          // description: "I was warming up.",
+          // companyWebSite: "http://someexamplecompany.com",
+          // companyMeta: "SF USA",
+          datesBetween: "11/2017 - 02/2021",
         },
       ],
     },
     {
       type: "projects-list",
-      title: "Projects",
-      description: "Optional",
+      title: "Projects & Achievements",
+      // description: "Optional",
       icon: "tasks",
       groups: [
         {
-          sectionHeader: "Company Name",
-          description: "Optional",
+          sectionHeader: "Karakoram International University",
+          description: "Achievements",
           items: [
             {
-              title: "Project",
-              projectUrl: "optional",
-              description: "Optional",
+              title: "Vice President",
+              // projectUrl: "optional",
+              description:
+                "Serving as a vice president of “All Staff Association” Karakorum International University",
             },
             {
-              title: "Project",
-              projectUrl: "optional",
-              description: "Optional",
+              title: "Coordinator",
+              // projectUrl: "optional",
+              description:
+                "Serving as a coordinator visiting faculty of dept. of linguistics and literature.",
             },
             {
-              title: "Project",
-              projectUrl: "optional",
-              description: "Optional",
+              title: "Founder of KLS",
+              // projectUrl: "optional",
+              description:
+                "Founder of Karakorum International University Literary Society.",
+            },
+            {
+              title: "Host International Conference",
+              // projectUrl: "optional",
+              description:
+                "Host two days International Conference on Collective Action for Knowledge Economy with Technology (DIGICAKE).",
+            },
+            {
+              title: "Host Young Leaders Summit",
+              // projectUrl: "optional",
+              description:
+                "Host Young Leaders Summit in Collaboration with Polaris Systems LLP. ",
+            },
+            {
+              title: "Host Pak TESOL Workshop",
+              // projectUrl: "optional",
+              description:
+                "Host two days’ Pak TESOL workshop on the innovations in English Language Teaching.",
+            },
+            {
+              title: "Host International Conference",
+              // projectUrl: "optional",
+              description:
+                "Host two days International Conference on Collective Action for Knowledge Economy with Technology (DIGICAKE).",
+            },
+            {
+              title: "Host Pak-TESOL GB Conference",
+              // projectUrl: "optional",
+              description:
+                "Host 1st Pak TESOL Gilgit-Baltistan Regional Conference and Training Workshop on Innovations in English Language Teaching and Learning.",
+            },
+            {
+              title: "KIU TV",
+              // projectUrl: "optional",
+              description:
+                "Anchor person of a talk show “Professor’s online” KIU TV.",
+            },
+            {
+              title: "Editor",
+              // projectUrl: "optional",
+              description:
+                "Editor of Karakorum International University Magazine.",
             },
           ],
         },
@@ -102,7 +182,7 @@ export const CVData = {
     },
     {
       type: "common-list",
-      title: "Conferences & Certificates",
+      title: "Social & Volunteer Activities",
       description: "",
       icon: "comments",
       items: [
@@ -134,8 +214,12 @@ export const CVData = {
           authorityMeta: "Professional",
         },
         {
-          authority: "Spanish",
-          authorityMeta: "Beginner",
+          authority: "Urdu",
+          authorityMeta: "National",
+        },
+        {
+          authority: "Punjabi",
+          authorityMeta: "Native",
         },
       ],
     },

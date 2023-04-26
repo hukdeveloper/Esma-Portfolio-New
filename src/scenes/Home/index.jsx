@@ -16,9 +16,6 @@ export default function Home() {
         justifyContent: "space-between",
         flexDirection: "column",
         gap: "10px",
-        "@media (max-width:1068px)": {
-          p: "1.5rem 0.1rem",
-        },
       }}
     >
       <Profile />
