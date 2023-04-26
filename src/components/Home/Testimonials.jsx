@@ -51,7 +51,7 @@ export default function Testimonials() {
               justifyContent: "flex-start",
               "@media(max-width:580px)": {
                 flexDirection: "column",
-                height: "auto",
+                height: 800,
               },
             }}
           >
@@ -117,9 +117,6 @@ export default function Testimonials() {
             <CardContent
               sx={{
                 overflowY: "scroll",
-                "@media(max-width:580px)": {
-                  overflow: "hidden",
-                },
               }}
             >
               <Typography
@@ -156,7 +153,7 @@ export default function Testimonials() {
               justifyContent: "flex-start",
               "@media(max-width:580px)": {
                 flexDirection: "column",
-                height: "auto",
+                height: 800,
               },
             }}
           >
@@ -222,9 +219,6 @@ export default function Testimonials() {
             <CardContent
               sx={{
                 overflowY: "scroll",
-                "@media(max-width:580px)": {
-                  overflow: "hidden",
-                },
               }}
             >
               <Typography
@@ -264,7 +258,7 @@ export default function Testimonials() {
               justifyContent: "flex-start",
               "@media(max-width:580px)": {
                 flexDirection: "column",
-                height: "auto",
+                height: 800,
               },
             }}
           >
@@ -331,9 +325,6 @@ export default function Testimonials() {
             <CardContent
               sx={{
                 overflowY: "scroll",
-                "@media(max-width:580px)": {
-                  overflow: "hidden",
-                },
               }}
             >
               <Typography
