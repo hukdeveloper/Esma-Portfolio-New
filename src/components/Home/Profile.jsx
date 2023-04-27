@@ -2,6 +2,7 @@ import { Avatar, Box, Button, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
 import MainHeading from "../MainHeading";
 import { School, Telegram } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export default function Profile() {
   const theme = useTheme();
@@ -83,9 +84,12 @@ export default function Profile() {
                 width: "100%",
                 textTransform: "capitalize",
                 backgroundColor: "#070812",
+                "&.MuiButtonBase-root a": {
+                  color: "#fff",
+                },
               }}
             >
-              Let's Connect
+              <Link to="/contact"> Let's Connect</Link>
             </Button>
             <Button
               sx={{
@@ -94,12 +98,15 @@ export default function Profile() {
                 width: "100%",
                 textTransform: "capitalize",
                 backgroundColor: "#3A2A04",
+                "&.MuiButtonBase-root a": {
+                  color: "#fff",
+                },
               }}
               color="success"
               variant="contained"
               startIcon={<School />}
             >
-              View Resume
+              <Link to="/resume"> View Resume</Link>
             </Button>
           </Box>
         </Grid>

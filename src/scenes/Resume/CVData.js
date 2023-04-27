@@ -187,20 +187,73 @@ export const CVData = {
       icon: "comments",
       items: [
         {
-          title: "Some Conferences / 2019",
-          authority: "SomeConf",
-          authorityWebSite: "https://www.someconf.somesome",
+          title:
+            "Volunteered to trained 40 teachers from different regions of Gilgit Baltistan working under DFECD",
+          authority: "Trainer",
+          rightSide: "2021",
         },
         {
-          title: "Some Conferences / 2019",
-          authority: "SomeConf",
-          authorityMeta: "Speaker",
-          authorityWebSite: "https://www.someconf.somesome",
-          rightSide: "test",
+          title:
+            "Raised funds of 1 lac rupees to help the people effected by pandemic of COVID 19",
+          authority: "Volunteer",
+          rightSide: "2020",
         },
         {
-          title: "Some Conferences / 2012",
-          authorityMeta: "Speaker",
+          title:
+            "Volunteered to trained 100 teachers from underprivileged areas of Lahore",
+          authority: "Trainer",
+          rightSide: "2019",
+        },
+        {
+          title:
+            "Organized two days’ teacher training at SOS Villages (Orphan age home) Muzaffarabad",
+          authority: "Organizer",
+          rightSide: "2018",
+        },
+        {
+          title:
+            "Volunteered to preserved an endangered language of Pakistan (Wakhi)",
+          authority: "Volunteer",
+          rightSide: "2018",
+        },
+        {
+          title:
+            "Core team member at summer camps arranged by Dream to Education for All (NGO). ",
+          authority: "Volunteer",
+          rightSide: "(2016, 2017, 2018)",
+        },
+        {
+          title:
+            "The Little Warriors Never Give Up, an organization for children cancer patients",
+          authority: "CEO",
+          rightSide: "2017",
+        },
+        {
+          title: "Literary Organization Mustansar Hussain Tarar Readers Words",
+          authority: "Ambassador",
+          rightSide: "2017",
+        },
+        {
+          title: "A literary session at SOS Villages (Orphan age home) Lahore",
+          authority: "Organizer",
+          rightSide: "2017",
+        },
+        {
+          title:
+            "Arranged 100 books for the library of SOS Villages (Orphan age home) Lahore",
+          authority: "Organizer",
+          rightSide: "2017",
+        },
+        {
+          title: "Literary Organization Mustansar Hussain Tarar Readers Words",
+          authority: "Ambassador",
+          rightSide: "2015",
+        },
+        {
+          title:
+            "Volunteered to teach 200 students at summer camps arranged by Dream to Education for All (NGO)",
+          authority: "Instructor",
+          rightSide: "2015",
         },
       ],
     },
@@ -227,7 +280,12 @@ export const CVData = {
       type: "tag-list",
       title: "Skills Proficiency",
       icon: "rocket",
-      items: ["React", "Javascript", "CSS", "SQL", "SomeTech", "CoolTech"],
+      items: [
+        "Effective Listening",
+        "Excellent Communications",
+        "Cultural Sensitivity",
+        "Confident Manner",
+      ],
     },
     {
       type: "tag-list",

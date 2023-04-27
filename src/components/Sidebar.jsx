@@ -106,7 +106,7 @@ export default function Sidebar(props) {
               }}
             >
               <a
-                href="https://www.facebook.com/"
+                href="www.linkedin.com/in/esma-ramzan-310isqz"
                 target="_blank"
                 rel="noreferrer"
               >

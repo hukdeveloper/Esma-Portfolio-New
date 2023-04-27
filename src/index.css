@@ -93,6 +93,15 @@ body,
 .bulma_column__RLzJK {
   margin-top: 10px;
 }
+.bulma_content__RJaNt h5 {
+  font-size: 18px !important;
+  overflow: hidden;
+  line-break: auto !important;
+  width: 80%;
+}
+.styles_projectMeta__z1u0B {
+  font-size: 13px !important;
+}
 @media screen and (max-width: 575px) {
   .bulma_column__RLzJK {
     margin: 30px 0 !important;
