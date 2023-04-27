@@ -10,6 +10,7 @@ export default function index() {
       sx={{
         height: "auto",
         overflowY: "auto",
+        overflowX: "hidden",
         "@media (max-width:1068px)": {
           p: "1.5rem 0.1rem",
         },
