@@ -182,7 +182,7 @@ export default function Testimonials() {
                 p="8px 0"
                 color="#fff"
               >
-                Jasir Shahbaz
+                Samina Tariq
               </Typography>
               <Typography variant="body2" fontSize={12} color={"#F0F0F0"}>
                 Founder of Little warriors

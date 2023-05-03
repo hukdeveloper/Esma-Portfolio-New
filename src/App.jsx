@@ -24,7 +24,17 @@ function App() {
               p={"1rem 1.5rem"}
               sx={{
                 height: "100vh",
-                overflowY: "scroll",
+                overflowY: "auto",
+                "::-webkit-scrollbar": {
+                  width: "15px",
+                  zIndex: 1,
+                },
+                "::-webkit-scrollbar-track": {
+                  background: "#7a7f9d",
+                },
+                "::-webkit-scrollbar-thumb": {
+                  background: "linear-gradient(to right, #000345, #0898D5)",
+                },
               }}
             >
               <Routes>
