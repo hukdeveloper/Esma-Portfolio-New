@@ -1,23 +1,28 @@
-import {
-  Box,
-  ImageList,
-  ImageListItem,
-  ImageListItemBar,
-  Typography,
-} from "@mui/material";
-import React from "react";
+import { Box, ImageList, ImageListItem, Typography } from "@mui/material";
 
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    img: "../../assets/l1.jpg",
     title: "Book Opening Ceremony",
     author:
-      "The tradition of recording the experience of passing through any spiritual or religious journey is not new. Geoffrey Chaucer, the father of English, has been famous for his Canterbury Tales and its prologue.",
+      "Book completion and publication announcement... " +
+      "Dear all," +
+      "Back in 2019 I went to Hujj with my grandfather. I never thought of writing a book on this topic but this journey has left a deep impact on me as a person and as a traveler as well." +
+      "After a couple of months, I started writing. It took more than 2 years, almost 1000 days. I spent many sleepless days and nights in which I was asking my self 'Is this really worth it'. The real struggle started after completing the book. It went through a long... long...  publishing process. Sometimes I thought 'ye mery bs ki bat hi nai thi' but thanks to Allah Almighty Who helped me to make it happen . People usually say dreams don't come true. I say they do, you just got to push hard enough and have faith. This is the reason I gave this title to my book. " +
+      "خواب سے حقیقت تک" +
+      "In this travelogue I tried to portray a journey to explore the spiritual significance of this sacred destination. Through vivid descriptions and thoughtful reflections, I tried to take the reader on a journey of discovery, sharing insights about the rich cultural and historical significance of the place, as well as the personal transformation experienced along the way." +
+      "The most important character in this book is my grandfather, who left us a few months back. He was the person who took me there, who taught me everything. He was my partner, my spiritual guide. Though he is not here to read my words for him, I am glad that people will know him through this book. He must be happy in heaven." +
+      "I would like to thank each and everyone who has helped me and supported me throughout this journey." +
+      "I am indebted.",
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Volunteer",
-    author: "Working at qadam trust......",
+    img: "../../assets/p2.jpg",
+    title: "Book launch ceremony",
+    author:
+      "Book Launch Ceremony" +
+      "We celebrate the launch of the highly anticipated book 'خواب سے حقیقت تک' under the auspices of the KIU Literary Society. We were honored to have the esteemed Vice Chancellor, Prof. Dr. Atta Ullah Shah as our chief guest, along with members of the Halqa-e-Arbab Zauq Gilgit, staff, and faculty of Karakorum International University." +
+      "During his speech, Prof. Dr. Atta Ullah Shah highlighted the importance of books and how they play a vital role in shaping our society. He congratulated the author, Esma Ramzan, for her remarkable work and contributions to the literary world." +
+      "We are thrilled to have published such an insightful and thought-provoking book, which explores the depths of our dreams and the impact they have on our daily lives. Congratulations to Esma Ramzan on this outstanding achievement, and we hope that readers everywhere will enjoy and benefit from this remarkable literary work.",
   },
   {
     img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",

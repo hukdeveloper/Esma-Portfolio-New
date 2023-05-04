@@ -21,7 +21,6 @@ function App() {
             <Sidebar />
             <Box
               width={"100%"}
-              p={"1rem 1.5rem"}
               sx={{
                 height: "100vh",
                 overflowY: "auto",
@@ -34,6 +33,13 @@ function App() {
                 },
                 "::-webkit-scrollbar-thumb": {
                   background: "linear-gradient(to right, #000345, #0898D5)",
+                },
+                "@media (max-width:768px)": {
+                  p: 0,
+                  "::-webkit-scrollbar": {
+                    width: 0,
+                    zIndex: 1,
+                  },
                 },
               }}
             >
