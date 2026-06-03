@@ -18,6 +18,7 @@ const navLinks = [
   { label: "Research", href: "/research" },
   { label: "Publications", href: "/publications" },
   { label: "Teaching", href: "/teaching" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -8,6 +8,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import LinkButton from '@/components/ui/LinkButton';
 import ExpandableBio from '@/components/home/ExpandableBio';
+import GalleryGrid from '@/components/gallery/GalleryGrid';
+import { homePreviewImages } from '@/lib/data/gallery';
 import { profile } from '@/lib/data/profile';
 import { recentPublications } from '@/lib/data/publications';
 import { researchAreas } from '@/lib/data/research';
@@ -457,6 +459,38 @@ export default function HomePage() {
               View All Courses
             </LinkButton>
           </Box>
+        </Container>
+      </Box>
+
+      {/* ── Gallery preview ── */}
+      <Box sx={{ py: { xs: 7, md: 10 }, bgcolor: '#F8FAFB' }}>
+        <Container maxWidth="lg">
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: { xs: 'flex-start', sm: 'center' },
+              flexDirection: { xs: 'column', sm: 'row' },
+              gap: 2,
+              mb: 5,
+            }}
+          >
+            <Box>
+              <Typography
+                component="span"
+                sx={{ display: 'block', color: 'secondary.dark', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', mb: 1 }}
+              >
+                Moments &amp; Memories
+              </Typography>
+              <Typography variant="h2" sx={{ fontSize: { xs: '1.85rem', md: '2.5rem' } }}>
+                Gallery
+              </Typography>
+            </Box>
+            <LinkButton href="/gallery" variant="outlined" color="primary" endIcon={<ArrowRight />}>
+              View All Photos
+            </LinkButton>
+          </Box>
+          <GalleryGrid images={homePreviewImages} showFilter={false} />
         </Container>
       </Box>
 
