@@ -1,6 +1,7 @@
 'use client';
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import { profile } from '@/lib/data/profile';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -39,7 +40,7 @@ export default function ContactForm() {
     const body = encodeURIComponent(
       `Name: ${values.name}\nEmail: ${values.email}\nSubject: ${values.subject}\n\nMessage:\n${values.message}`
     );
-    window.location.href = `mailto:contact@msesma.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
     setLoading(false);
     setSubmitted(true);
   };

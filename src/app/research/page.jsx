@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import Divider from '@mui/material/Divider';
 import Paper from '@mui/material/Paper';
-import { researchAreas, currentProjects } from '@/lib/data/research';
+import { researchAreas, currentProjects, researchPhilosophy, researchConsultancy } from '@/lib/data/research';
 
 export const metadata = {
   title: 'Research',
@@ -43,8 +43,32 @@ export default function ResearchPage() {
             Research
           </Typography>
           <Typography variant="h6" sx={{ color: 'text.secondary', fontWeight: 400, maxWidth: 640 }}>
-            Dr. Ramzan&apos;s scholarship spans six interconnected areas of Islamic studies, united by a commitment
-            to rigorous methodology and meaningful application.
+            Esma Ramzan&apos;s scholarship focuses on language documentation, multilingualism, and innovative language education, united by a commitment to preserving linguistic diversity and supporting teacher development.
+          </Typography>
+        </Container>
+      </Box>
+
+      {/* Research Philosophy */}
+      <Box sx={{ py: { xs: 5, md: 7 }, bgcolor: '#FAFCFE', borderBottom: '1px solid', borderColor: 'divider' }}>
+        <Container maxWidth="lg">
+          <Typography
+            variant="overline"
+            sx={{ color: 'secondary.dark', display: 'block', mb: 1 }}
+          >
+            Research Philosophy
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              color: 'text.primary',
+              fontStyle: 'italic',
+              fontSize: { xs: '1.1rem', md: '1.25rem' },
+              lineHeight: 1.65,
+              maxWidth: 800,
+              fontFamily: 'var(--font-playfair), serif',
+            }}
+          >
+            &ldquo;{researchPhilosophy.text}&rdquo;
           </Typography>
         </Container>
       </Box>
@@ -217,6 +241,63 @@ export default function ResearchPage() {
                 </Box>
               </Paper>
             ))}
+          </Box>
+        </Container>
+      </Box>
+
+      {/* Research Consultancy */}
+      <Box sx={{ py: { xs: 6, md: 10 }, bgcolor: '#fff' }}>
+        <Container maxWidth="lg">
+          <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1.2fr 1fr' }, gap: { xs: 5, md: 8 }, alignItems: 'center' }}>
+            <Box>
+              <Typography
+                component="span"
+                sx={{
+                  display: 'block',
+                  color: 'secondary.dark',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.14em',
+                  textTransform: 'uppercase',
+                  mb: 1.5,
+                }}
+              >
+                Services
+              </Typography>
+              <Typography variant="h2" sx={{ mb: 3, fontSize: { xs: '1.85rem', md: '2.25rem' } }}>
+                Research Consultancy
+              </Typography>
+              <Typography variant="body1" sx={{ color: 'text.secondary', mb: 4, lineHeight: 1.75 }}>
+                Providing expert academic guidance, methodological design, and writing support for researchers, postgraduate students, and institutions in applied linguistics and education.
+              </Typography>
+              
+              <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 600, display: 'block', mb: 1.5, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                Areas of Expertise
+              </Typography>
+              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                {researchConsultancy.expertise.map((area) => (
+                  <Chip key={area} label={area} size="small" variant="outlined" sx={{ fontSize: '0.75rem', py: 1.5, px: 1, borderColor: 'divider', color: 'text.primary', fontWeight: 500 }} />
+                ))}
+              </Box>
+            </Box>
+
+            <Box sx={{ p: 4, bgcolor: '#FAFCFE', border: '1px solid', borderColor: 'divider', borderRadius: 4, textAlign: 'center' }}>
+              <Typography variant="h6" sx={{ color: 'primary.main', fontWeight: 700, mb: 3 }}>
+                Consultancy Impact
+              </Typography>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3.5, alignItems: 'center' }}>
+                {researchConsultancy.stats.map((stat) => (
+                  <Box key={stat.label}>
+                    <Typography variant="h3" sx={{ color: 'secondary.dark', fontWeight: 800, mb: 0.5 }}>
+                      {stat.value}
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 500 }}>
+                      {stat.label}
+                    </Typography>
+                  </Box>
+                ))}
+              </Box>
+            </Box>
           </Box>
         </Container>
       </Box>

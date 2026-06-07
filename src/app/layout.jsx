@@ -19,40 +19,41 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    default: 'Dr. Esma Ramzan — Scholar, Educator & Author',
-    template: '%s | Dr. Esma Ramzan',
+    default: 'Esma Ramzan — Applied Linguist & Teacher Trainer',
+    template: '%s | Esma Ramzan',
   },
   description:
-    'Dr. Esma Ramzan is a distinguished scholar and educator specialising in Islamic Studies, educational philosophy, and comparative religion. Explore her research, publications, and teaching.',
+    'Esma Ramzan is an Applied Linguist, Lecturer in Linguistics, Research Consultant, and Teacher Trainer. Explore her research in language documentation, sociolinguistics, and multilingualism.',
   keywords: [
     'Esma Ramzan',
-    'Islamic Studies',
-    'Islamic scholar',
-    'Islamic education',
-    'Muslim educator',
-    'religious studies',
-    'tafsir',
-    'Islamic philosophy',
+    'Applied Linguistics',
+    'Linguistics Lecturer',
+    'Teacher Trainer',
+    'Language Documentation',
+    'Multilingualism',
+    'Sociolinguistics',
+    'AI in Language Education',
+    'Second Language Acquisition',
     'academic',
     'publications',
   ],
-  authors: [{ name: 'Dr. Esma Ramzan' }],
-  creator: 'Dr. Esma Ramzan',
+  authors: [{ name: 'Esma Ramzan' }],
+  creator: 'Esma Ramzan',
   metadataBase: new URL('https://msesma.vercel.app'),
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://msesma.vercel.app',
-    siteName: 'Dr. Esma Ramzan',
-    title: 'Dr. Esma Ramzan — Scholar, Educator & Author',
+    siteName: 'Esma Ramzan',
+    title: 'Esma Ramzan — Applied Linguist & Teacher Trainer',
     description:
-      'Distinguished scholar and educator specialising in Islamic Studies, educational philosophy, and comparative religion.',
+      'Applied Linguist, Lecturer in Linguistics, Research Consultant, and Teacher Trainer.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dr. Esma Ramzan — Scholar, Educator & Author',
+    title: 'Esma Ramzan — Applied Linguist & Teacher Trainer',
     description:
-      'Distinguished scholar and educator specialising in Islamic Studies, educational philosophy, and comparative religion.',
+      'Applied Linguist, Lecturer in Linguistics, Research Consultant, and Teacher Trainer.',
   },
   robots: {
     index: true,

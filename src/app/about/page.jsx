@@ -3,6 +3,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import Divider from '@mui/material/Divider';
+import Paper from '@mui/material/Paper';
 import Image from 'next/image';
 import LinkButton from '@/components/ui/LinkButton';
 import { profile } from '@/lib/data/profile';
@@ -10,7 +11,7 @@ import { profile } from '@/lib/data/profile';
 export const metadata = {
   title: 'About',
   description:
-    'Learn about Dr. Esma Ramzan — her academic background, research interests, professional journey, and commitment to Islamic scholarship and education.',
+    'Learn about Esma Ramzan — her academic background, research interests, professional journey, and commitment to language education.',
 };
 
 /* ── Email icon ── */
@@ -71,7 +72,7 @@ export default function AboutPage() {
             Biography
           </Typography>
           <Typography variant="h1" sx={{ fontSize: { xs: '2.1rem', md: '3rem' }, mb: 2 }}>
-            About Dr. Esma Ramzan
+            About Esma Ramzan
           </Typography>
           <Typography variant="h6" sx={{ color: 'text.secondary', fontWeight: 400, maxWidth: 600, fontSize: { xs: '1rem', md: '1.25rem' } }}>
             {profile.title} — dedicated to advancing scholarship through rigorous academic inquiry and inspired teaching.
@@ -196,6 +197,246 @@ export default function AboutPage() {
                   </Box>
                 ))}
               </Box>
+
+              <Divider sx={{ my: 5 }} />
+
+              {/* Career Timeline */}
+              <Typography variant="h4" sx={{ mb: 3, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
+                Professional Journey
+              </Typography>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+                {profile.careerTimeline.map((item, i) => (
+                  <Box
+                    key={i}
+                    sx={{
+                      display: 'flex',
+                      gap: 3,
+                      pb: i < profile.careerTimeline.length - 1 ? 4 : 0,
+                      position: 'relative',
+                      '&::before': i < profile.careerTimeline.length - 1
+                        ? {
+                            content: '""',
+                            position: 'absolute',
+                            left: 19,
+                            top: 42,
+                            bottom: 0,
+                            width: 2,
+                            bgcolor: '#DDE6EE',
+                          }
+                        : {},
+                    }}
+                  >
+                    {/* Timeline dot */}
+                    <Box
+                      sx={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: '50%',
+                        bgcolor: i === 0 ? 'secondary.main' : '#EFF4F9',
+                        border: '2px solid',
+                        borderColor: i === 0 ? 'secondary.main' : '#DDE6EE',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexShrink: 0,
+                        zIndex: 1,
+                      }}
+                    >
+                      <Typography
+                        sx={{
+                          color: i === 0 ? '#fff' : 'text.secondary',
+                          fontSize: '0.62rem',
+                          fontWeight: 700,
+                          letterSpacing: '-0.02em',
+                        }}
+                      >
+                        {item.years.split('–')[0].slice(2)}
+                      </Typography>
+                    </Box>
+                    <Box sx={{ pt: 0.5 }}>
+                      <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'text.primary', mb: 0.25, lineHeight: 1.3 }}>
+                        {item.role}
+                      </Typography>
+                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                        {item.institution} &mdash; {item.years}
+                      </Typography>
+                    </Box>
+                  </Box>
+                ))}
+              </Box>
+
+              <Divider sx={{ my: 5 }} />
+
+              {/* Missions */}
+              <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr' }, gap: 3.5 }}>
+                <Box sx={{ p: 3, bgcolor: '#FAFCFE', border: '1px solid', borderColor: 'divider', borderRadius: 3 }}>
+                  <Typography variant="h6" sx={{ color: 'primary.main', fontWeight: 700, mb: 1.5, display: 'flex', alignItems: 'center', gap: 1 }}>
+                    🏫 Academic Mission
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
+                    {profile.academicMission}
+                  </Typography>
+                </Box>
+                <Box sx={{ p: 3, bgcolor: '#FAFCFE', border: '1px solid', borderColor: 'divider', borderRadius: 3 }}>
+                  <Typography variant="h6" sx={{ color: 'primary.main', fontWeight: 700, mb: 1.5, display: 'flex', alignItems: 'center', gap: 1 }}>
+                    🔍 Research Mission
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
+                    {profile.researchMission}
+                  </Typography>
+                </Box>
+              </Box>
+
+              <Divider sx={{ my: 5 }} />
+
+              {/* Academic Leadership & Service */}
+              <Typography variant="h4" sx={{ mb: 2.5, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
+                Academic Leadership &amp; Service
+              </Typography>
+              <Box sx={{ p: 3.5, border: '1px solid', borderColor: 'divider', borderRadius: 3, bgcolor: '#fff', mb: 3 }}>
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 2, flexWrap: 'wrap', gap: 1 }}>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'primary.main' }}>
+                    Founder, KIU Literary Society
+                  </Typography>
+                  <Chip label="2022–Present" size="small" sx={{ bgcolor: 'rgba(201,169,75,0.12)', color: 'secondary.dark', fontWeight: 600, fontSize: '0.72rem' }} />
+                </Box>
+                <Typography variant="body2" sx={{ color: 'text.secondary', mb: 3, lineHeight: 1.65 }}>
+                  Established the Karakoram International University Literary Society in June 2022 to promote literary engagement, academic dialogue, and cultural exchange among students and the wider community.
+                </Typography>
+                
+                <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 600, display: 'block', mb: 1.5, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Key Achievements
+                </Typography>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.25, mb: 3 }}>
+                  {[
+                    'Organized 20+ literary and academic events',
+                    'Invited poets, authors, researchers, motivational speakers, and community leaders',
+                    'Promoted literary culture and intellectual engagement among students'
+                  ].map((ach, idx) => (
+                    <Box key={idx} sx={{ display: 'flex', gap: 1.5, alignItems: 'flex-start' }}>
+                      <Box sx={{ width: 6, height: 6, borderRadius: '50%', bgcolor: 'secondary.main', mt: '8px', flexShrink: 0 }} />
+                      <Typography variant="body2" sx={{ color: 'text.secondary', fontSize: '0.85rem' }}>
+                        {ach}
+                      </Typography>
+                    </Box>
+                  ))}
+                </Box>
+
+                <Divider sx={{ my: 2 }} />
+                <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 600, display: 'block', mb: 1.5, textTransform: 'uppercase', letterSpacing: '0.05em', mt: 2 }}>
+                  Additional Leadership Roles
+                </Typography>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                  {[
+                    'Conference Organization',
+                    'Session Moderation',
+                    'Student Competition Coordination',
+                    'Teacher Development Programs',
+                    'Academic Seminars',
+                    'Public Talks',
+                    'Community Outreach Activities'
+                  ].map((role) => (
+                    <Chip key={role} label={role} size="small" variant="outlined" sx={{ fontSize: '0.72rem', borderColor: 'divider', color: 'text.secondary' }} />
+                  ))}
+                </Box>
+              </Box>
+
+              <Divider sx={{ my: 5 }} />
+
+              {/* Community Impact */}
+              <Typography variant="h4" sx={{ mb: 3, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
+                Community Impact &amp; Philanthropy
+              </Typography>
+              <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr' }, gap: 3.5 }}>
+                {/* DEFA */}
+                <Box sx={{ p: 3, border: '1px solid', borderColor: 'divider', borderRadius: 3, display: 'flex', flexDirection: 'column', height: '100%' }}>
+                  <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 1.5, flexWrap: 'wrap', gap: 1 }}>
+                    <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'primary.main' }}>
+                      DEFA
+                    </Typography>
+                    <Chip label="Director Operations" size="small" sx={{ bgcolor: 'rgba(27,79,114,0.08)', color: 'primary.dark', fontWeight: 600, fontSize: '0.7rem' }} />
+                  </Box>
+                  <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block', mb: 1.5 }}>
+                    Dream to Education For All
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2.5, lineHeight: 1.6, flexGrow: 1 }}>
+                    Providing quality educational opportunities to underprivileged communities through educational outreach, school partnerships, and youth development initiatives.
+                  </Typography>
+                  
+                  <Divider sx={{ my: 2 }} />
+                  <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 1.5, textAlign: 'center', mb: 2 }}>
+                    <Box>
+                      <Typography variant="h6" sx={{ color: 'secondary.dark', fontWeight: 700, fontSize: '1rem' }}>20+</Typography>
+                      <Typography variant="caption" sx={{ color: 'text.secondary', fontSize: '0.65rem', display: 'block' }}>Schools</Typography>
+                    </Box>
+                    <Box>
+                      <Typography variant="h6" sx={{ color: 'secondary.dark', fontWeight: 700, fontSize: '1rem' }}>200+</Typography>
+                      <Typography variant="caption" sx={{ color: 'text.secondary', fontSize: '0.65rem', display: 'block' }}>Interns</Typography>
+                    </Box>
+                    <Box>
+                      <Typography variant="h6" sx={{ color: 'secondary.dark', fontWeight: 700, fontSize: '1rem' }}>500+</Typography>
+                      <Typography variant="caption" sx={{ color: 'text.secondary', fontSize: '0.65rem', display: 'block' }}>Students</Typography>
+                    </Box>
+                  </Box>
+                </Box>
+
+                {/* Little Warriors */}
+                <Box sx={{ p: 3, border: '1px solid', borderColor: 'divider', borderRadius: 3, display: 'flex', flexDirection: 'column', height: '100%' }}>
+                  <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', mb: 1.5, flexWrap: 'wrap', gap: 1 }}>
+                    <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'primary.main' }}>
+                      Little Warriors
+                    </Typography>
+                    <Chip label="CEO" size="small" sx={{ bgcolor: 'rgba(27,79,114,0.08)', color: 'primary.dark', fontWeight: 600, fontSize: '0.7rem' }} />
+                  </Box>
+                  <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block', mb: 1.5 }}>
+                    Never Give Up
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2.5, lineHeight: 1.6, flexGrow: 1 }}>
+                    Supporting children fighting cancer through awareness campaigns, fundraising initiatives, and emotional support programs for patients and their families.
+                  </Typography>
+
+                  <Divider sx={{ my: 2 }} />
+                  <Box sx={{ display: 'grid', gridTemplateColumns: '1fr', gap: 1.5, textAlign: 'center', mb: 2 }}>
+                    <Box>
+                      <Typography variant="h6" sx={{ color: 'secondary.dark', fontWeight: 700, fontSize: '1rem' }}>200+</Typography>
+                      <Typography variant="caption" sx={{ color: 'text.secondary', fontSize: '0.65rem', display: 'block' }}>Children Supported</Typography>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
+
+              <Divider sx={{ my: 5 }} />
+
+              {/* Author */}
+              <Typography variant="h4" sx={{ mb: 3, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
+                Published Author
+              </Typography>
+              <Paper elevation={0} sx={{ p: 3.5, border: '1px solid', borderColor: 'divider', borderRadius: 3, bgcolor: 'rgba(201,169,75,0.03)', mb: 2 }}>
+                <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1.2fr 1fr' }, gap: 3.5, alignItems: 'center' }}>
+                  <Box>
+                    <Typography variant="h6" sx={{ fontWeight: 700, color: 'primary.main', mb: 1 }}>
+                      Khwab Sy Haqeeqat Tak (2023)
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2, lineHeight: 1.6 }}>
+                      A beautiful and inspiring Hajj travelogue documenting the spiritual and physical journey of the pilgrimage. Published by Darban Publications in 2023, the book offers a modern perspective on a timeless spiritual milestone.
+                    </Typography>
+                    <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+                      <Box>
+                        <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block' }}>Publisher</Typography>
+                        <Typography variant="body2" sx={{ fontWeight: 600 }}>Darban Publications</Typography>
+                      </Box>
+                      <Box>
+                        <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block' }}>Publication Year</Typography>
+                        <Typography variant="body2" sx={{ fontWeight: 600 }}>2023</Typography>
+                      </Box>
+                    </Box>
+                  </Box>
+                  <Box sx={{ p: 2, bgcolor: '#fff', border: '1px dashed', borderColor: 'divider', borderRadius: 2, textAlign: 'center' }}>
+                    <Typography variant="body2" sx={{ fontWeight: 600, color: 'secondary.dark', mb: 0.5 }}>📖 Hajj Travelogue</Typography>
+                    <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block' }}>Copies &amp; reader photos are available in the gallery.</Typography>
+                  </Box>
+                </Box>
+              </Paper>
             </Box>
 
             {/* ── Sidebar ── */}
@@ -228,7 +469,7 @@ export default function AboutPage() {
               >
                 <Image
                   src="/assets/esma1.jpg"
-                  alt="Dr. Esma Ramzan"
+                  alt="Esma Ramzan"
                   fill
                   sizes="(max-width: 900px) 100vw, 340px"
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -251,7 +492,7 @@ export default function AboutPage() {
                       lineHeight: 1.2,
                     }}
                   >
-                    Dr. Esma Ramzan
+                    Esma Ramzan
                   </Typography>
                   <Typography sx={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.78rem', mt: 0.25 }}>
                     {profile.title}

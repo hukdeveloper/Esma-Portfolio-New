@@ -16,9 +16,9 @@ import { researchAreas } from '@/lib/data/research';
 import { courses } from '@/lib/data/teaching';
 
 export const metadata = {
-  title: 'Dr. Esma Ramzan — Scholar, Educator & Author',
+  title: 'Esma Ramzan — Applied Linguist & Teacher Trainer',
   description:
-    'Welcome to the academic portfolio of Dr. Esma Ramzan — distinguished scholar and educator in Islamic Studies, educational philosophy, and comparative religion.',
+    'Welcome to the academic portfolio of Esma Ramzan — Applied Linguist, Lecturer in Linguistics, Research Consultant, and Teacher Trainer.',
 };
 
 function ArrowRight() {
@@ -112,7 +112,7 @@ export default function HomePage() {
                   border: '1px solid rgba(201,169,75,0.35)',
                 }}
               >
-                Scholar &bull; Educator &bull; Author
+                Applied Linguist &bull; Educator &bull; Researcher &bull; Teacher Trainer
               </Typography>
 
               <Typography
@@ -125,7 +125,7 @@ export default function HomePage() {
                   '& em': { color: '#C9A94B', fontStyle: 'normal' },
                 }}
               >
-                Dr. <em>Esma Ramzan</em>
+                <em>Esma Ramzan</em>
               </Typography>
 
               <Typography
@@ -228,7 +228,7 @@ export default function HomePage() {
               >
                 <Image
                   src="/assets/esma1.jpg"
-                  alt="Dr. Esma Ramzan"
+                  alt="Esma Ramzan"
                   fill
                   sizes="(max-width: 1200px) 300px, 340px"
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -254,10 +254,10 @@ export default function HomePage() {
                       lineHeight: 1.2,
                     }}
                   >
-                    Dr. Esma Ramzan
+                    Esma Ramzan
                   </Typography>
                   <Typography sx={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.78rem', mt: 0.25 }}>
-                    Scholar &amp; Educator
+                    Applied Linguist &amp; Teacher Trainer
                   </Typography>
                 </Box>
               </Box>
@@ -273,16 +273,15 @@ export default function HomePage() {
           <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1fr 1fr' }, gap: { xs: 5, md: 8 }, alignItems: 'center' }}>
             {/* Decorative card */}
             <Box sx={{ position: 'relative', order: { xs: 2, md: 1 } }}>
-              <Box sx={{ bgcolor: 'primary.main', borderRadius: 4, p: { xs: 4, md: 5 }, color: '#fff', position: 'relative', overflow: 'hidden' }}>
+              <Box sx={{ bgcolor: 'primary.main', borderRadius: 4, pt: { xs: 4, md: 5 }, px: { xs: 4, md: 5 }, pb: { xs: 8, md: 9 }, color: '#fff', position: 'relative', overflow: 'hidden' }}>
                 <Box aria-hidden sx={{ position: 'absolute', top: -30, right: -30, width: 140, height: 140, borderRadius: '50%', bgcolor: 'rgba(255,255,255,0.06)' }} />
                 <Typography
                   variant="h6"
                   sx={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic', mb: 3, lineHeight: 1.5, fontSize: { xs: '1.1rem', md: '1.25rem' } }}
                 >
-                  &ldquo;Education in the Islamic tradition is not merely the transmission of information
-                  but the formation of the whole person — intellectually, morally, and spiritually.&rdquo;
+                  &ldquo;I believe effective language education is learner-centered, inclusive, and transformative.&rdquo;
                 </Typography>
-                <Box sx={{ borderTop: '1px solid rgba(255,255,255,0.2)', pt: 2.5, display: 'flex', flexDirection: 'column', gap: 1.5 }}>
+                <Box sx={{ borderTop: '1px solid rgba(255,255,255,0.2)', pt: 2.5, display: 'flex', flexDirection: 'column', gap: 1.5, mb: 4 }}>
                   {profile.education.slice(0, 2).map((edu) => (
                     <Box key={edu.degree}>
                       <Typography variant="body2" sx={{ fontWeight: 600, color: '#C9A94B' }}>
@@ -296,9 +295,9 @@ export default function HomePage() {
                 </Box>
               </Box>
 
-              <Box sx={{ position: 'absolute', bottom: -20, left: 24, bgcolor: '#fff', border: '1px solid', borderColor: 'divider', borderRadius: 3, px: 2.5, py: 1.5, boxShadow: '0 4px 20px rgba(27,79,114,0.1)', display: { xs: 'none', sm: 'block' } }}>
-                <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block', mb: 0.5 }}>Research Focus</Typography>
-                <Box sx={{ display: 'flex', gap: 0.75, flexWrap: 'wrap' }}>
+              <Box sx={{ position: 'absolute', bottom: -20, left: '50%', transform: 'translateX(-50%)', width: 'max-content', maxWidth: '90%', bgcolor: '#fff', border: '1px solid', borderColor: 'divider', borderRadius: 3, px: 3, py: 2.25, boxShadow: '0 8px 32px rgba(27,79,114,0.12)', display: { xs: 'none', sm: 'block' } }}>
+                <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block', mb: 1, textAlign: 'center', fontWeight: 600 }}>Research Focus</Typography>
+                <Box sx={{ display: 'flex', gap: 0.75, flexWrap: 'wrap', justifyContent: 'center' }}>
                   {profile.researchInterests.slice(0, 3).map((r) => (
                     <Chip key={r} label={r} size="small" sx={{ bgcolor: 'rgba(27,79,114,0.07)', color: 'primary.main', fontSize: '0.7rem' }} />
                   ))}
@@ -312,9 +311,9 @@ export default function HomePage() {
                 About
               </Typography>
               <Typography variant="h3" sx={{ mb: 3, fontSize: { xs: '1.75rem', md: '2.25rem' } }}>
-                A Life in Scholarship &amp; Service
+                A Life in Language Education &amp; Service
               </Typography>
-              <ExpandableBio paragraphs={[profile.bioLong[0], profile.bioLong[1]]} />
+              <ExpandableBio paragraphs={[profile.bioLong[0]]} />
 
               <LinkButton
                 href="/about"
@@ -504,8 +503,7 @@ export default function HomePage() {
             Let&apos;s Connect
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary', mb: 4, maxWidth: 460, mx: 'auto' }}>
-            Whether you have a research inquiry, invitation to speak, or would like to discuss collaboration — Dr.
-            Ramzan welcomes your message.
+            Whether you have a research inquiry, invitation to speak, or would like to discuss collaboration — Esma Ramzan welcomes your message.
           </Typography>
           <LinkButton href="/contact" variant="contained" color="primary" size="large">
             Send a Message

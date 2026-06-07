@@ -1,106 +1,76 @@
 export const courses = [
   {
     id: 1,
-    code: 'ISST 101',
-    title: 'Introduction to Islamic Studies',
+    code: 'LING 101',
+    title: 'Introduction to Applied Linguistics',
     level: 'Undergraduate',
     levelColor: '#27AE60',
     description:
-      'A foundational survey of Islamic history, theology, jurisprudence, and spirituality. Students will gain an understanding of core Islamic beliefs, practices, and intellectual traditions from the time of the Prophet through to the contemporary period.',
+      'A foundational course exploring how language science solves real-world issues. Topics include language education methodology, translation theory, language planning, sociolinguistic applications, and bilingualism.',
     outcomes: [
-      'Understand the foundations of Islamic theology and practice',
-      'Navigate primary Islamic texts with scholarly methodology',
-      'Appreciate the diversity of expression within the Islamic tradition',
+      'Understand the scope and key domains of applied linguistics',
+      'Analyze language acquisition theories and their classroom applications',
+      'Critically evaluate language policy and sociolinguistic problems',
     ],
     currentlyTeaching: true,
   },
   {
     id: 2,
-    code: 'ISST 201',
-    title: 'The Quran and Its Interpretation',
-    level: 'Undergraduate',
-    levelColor: '#27AE60',
+    code: 'LING 201',
+    title: 'Second Language Acquisition',
+    level: 'Advanced Undergraduate',
+    levelColor: '#C9A94B',
     description:
-      'An in-depth exploration of the Quran as a text and as a living scripture. The course examines classical and modern approaches to tafsir, the history of Quranic compilation, and the role of the Quran in Muslim life and piety.',
+      'Explores the processes, stages, and factors involved in acquiring a second language. Students study cognitive, linguistic, and socio-cultural frameworks of language learning alongside pedagogical implications.',
     outcomes: [
-      'Analyse key tafsir methodologies and their historical development',
-      'Engage with major tafsir works in translation',
-      'Critically evaluate modern interpretive approaches',
+      'Contrast major second language acquisition theories and models',
+      'Analyze learner errors and interlanguage development patterns',
+      'Design pedagogical strategies that support natural L2 acquisition',
     ],
     currentlyTeaching: true,
   },
   {
     id: 3,
-    code: 'ISST 302',
-    title: 'Islamic Law and Ethics',
-    level: 'Undergraduate',
-    levelColor: '#27AE60',
+    code: 'LING 301',
+    title: 'Bilingualism',
+    level: 'Advanced Undergraduate',
+    levelColor: '#C9A94B',
     description:
-      'An examination of Islamic jurisprudence (fiqh) and its ethical foundations. Topics include the sources and methodology of Islamic law, the major legal schools, and the application of Islamic legal reasoning to contemporary issues.',
+      'An investigation into individual and societal bilingualism. The course covers the cognitive impacts of bilingualism, linguistic code-switching, language maintenance, and bilingual education policies.',
     outcomes: [
-      'Explain the structure and sources of Islamic jurisprudence',
-      'Apply usul al-fiqh principles to case studies',
-      'Engage with contemporary fiqh debates with scholarly competence',
+      'Understand cognitive and neurolinguistic aspects of bilingual processing',
+      'Analyze code-switching and bilingual identity in social interaction',
+      'Evaluate international models of bilingual and multilingual education',
     ],
-    currentlyTeaching: false,
+    currentlyTeaching: true,
   },
   {
     id: 4,
-    code: 'ISST 315',
-    title: 'Women in Islamic Thought',
-    level: 'Undergraduate',
-    levelColor: '#27AE60',
-    description:
-      'An interdisciplinary course examining the roles and voices of women in Islamic intellectual and spiritual history. Drawing on historical sources and contemporary scholarship, students will challenge stereotypes and engage with the diverse realities of Muslim women\'s experiences.',
-    outcomes: [
-      'Recover the scholarly contributions of historical Muslim women',
-      'Critically evaluate classical and modern texts on gender',
-      'Situate contemporary Muslim feminism within its historical context',
-    ],
-    currentlyTeaching: true,
-  },
-  {
-    id: 5,
-    code: 'ISST 410',
-    title: 'Islamic Philosophy and Theology',
+    code: 'LING 305',
+    title: 'Language Endangerment',
     level: 'Advanced Undergraduate / Postgraduate',
-    levelColor: '#C9A94B',
-    description:
-      "A rigorous study of Islamic philosophical and theological thought, from the Mutazilites and Asharites through to Ibn Rushd, Al-Ghazali, and contemporary Islamic philosophers. The course places Islamic thought in dialogue with Greek philosophy and the Western intellectual tradition.",
-    outcomes: [
-      'Navigate the major schools of Islamic theology (kalam)',
-      'Engage with the thought of key Islamic philosophers',
-      'Analyse Islamic philosophical texts in critical discussion',
-    ],
-    currentlyTeaching: true,
-  },
-  {
-    id: 6,
-    code: 'ISST 420',
-    title: 'Contemporary Muslim Thought',
-    level: 'Postgraduate',
     levelColor: '#1B4F72',
     description:
-      'A graduate seminar exploring the major intellectual currents in contemporary Islamic thought. Topics include Islamic modernism, revivalist movements, postcolonial Islamic thought, and Muslim engagements with modernity, democracy, and human rights.',
+      'Examines the causes and consequences of language shift, endangerment, and extinction globally. Students study language documentation techniques, community-based preservation, and revitalization strategies.',
     outcomes: [
-      'Critically evaluate contemporary Islamic intellectual positions',
-      'Situate movements within their historical and political contexts',
-      'Produce original scholarly analysis of contemporary Muslim thinkers',
+      'Evaluate socio-political and economic factors causing language shift',
+      'Apply standard field methodologies to document linguistic data',
+      'Formulate action plans for endangered language revitalization',
     ],
     currentlyTeaching: false,
   },
   {
-    id: 7,
-    code: 'ISST 500',
-    title: 'Research Methods in Islamic Studies',
-    level: 'Postgraduate',
-    levelColor: '#1B4F72',
+    id: 5,
+    code: 'LING 100',
+    title: 'Functional English',
+    level: 'Undergraduate',
+    levelColor: '#27AE60',
     description:
-      'A graduate seminar introducing students to the methodological foundations of research in Islamic studies. Covers textual criticism, ethnography, archival research, and interdisciplinary approaches, with attention to the ethical dimensions of studying Muslim communities.',
+      'A practical skill-based course designed to develop students\' communicative competence in academic and professional English. Focuses on oral presentation, reading analysis, grammar, and writing.',
     outcomes: [
-      'Design and execute an original research project',
-      'Apply appropriate methodologies to specific research questions',
-      'Produce work meeting the standards of scholarly publication',
+      'Draft well-structured academic essays and professional communications',
+      'Deliver clear and persuasive oral presentations in English',
+      'Apply advanced English grammatical structures in speech and writing',
     ],
     currentlyTeaching: true,
   },
@@ -109,23 +79,41 @@ export const courses = [
 export const teachingPhilosophy = {
   heading: 'Teaching Philosophy',
   summary:
-    'Education, in the Islamic tradition, is not merely the transmission of information but the formation of the whole person — intellectually, morally, and spiritually. This conviction shapes everything I do in the classroom.',
+    'I believe effective language education is learner-centered, inclusive, and transformative. My teaching approach combines theoretical understanding with practical application, encouraging students to think critically, engage collaboratively, and connect linguistic concepts to real-world contexts.',
   principles: [
     {
-      title: 'Rigour with Humility',
-      body: 'I encourage students to engage seriously with primary texts and scholarly debates, while cultivating the intellectual humility to recognise the limits of their own perspective.',
+      title: 'Learner-Centered Pedagogy',
+      body: 'I design my courses to actively engage students in the learning process, placing their ideas and inquiries at the center of classroom exploration to build critical thinkers.',
     },
     {
-      title: 'Tradition and Critical Inquiry',
-      body: 'The Islamic intellectual tradition is best understood not as a fixed heritage but as a living conversation. I help students to enter that conversation with both respect and rigour.',
+      title: 'Inclusivity & Support',
+      body: 'I strive to create supportive learning environments that foster intellectual curiosity, academic confidence, and respect for diverse linguistic and cultural backgrounds.',
     },
     {
-      title: 'Mentorship',
-      body: 'Academic development is a relationship. I invest in my students as emerging scholars, offering substantive feedback and long-term mentorship beyond the classroom.',
+      title: 'Theory to Application',
+      body: 'Linguistics is most powerful when applied. I connect abstract grammatical and sociolinguistic concepts to real-world teaching, learning, and communication contexts.',
     },
     {
-      title: 'Inclusive Excellence',
-      body: 'I am committed to creating a classroom environment where students of all backgrounds feel that their perspectives are valued and their scholarly potential is taken seriously.',
+      title: 'Collaborative Growth',
+      body: 'I encourage collaborative projects and discussions, promoting peer-to-peer learning and helping students develop the collaborative and communication skills needed for their futures.',
     },
   ],
+};
+
+export const teacherTraining = {
+  stats: [
+    { value: '100+', label: 'Teachers Trained' }
+  ],
+  areas: [
+    'Classroom Management Strategies',
+    'Inclusive Education',
+    'Digital Tools for Teaching',
+    '21st Century Skills',
+    'Lesson Planning and Time Management',
+    'Social Emotional Learning (SEL)',
+    'Storytelling in Teaching',
+    'Implementation of Digital Skills in the Classroom',
+    'Experiential Learning Methods',
+    'Teacher Wellness and Self-Care'
+  ]
 };

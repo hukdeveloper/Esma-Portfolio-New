@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import Divider from '@mui/material/Divider';
 import Paper from '@mui/material/Paper';
-import { courses, teachingPhilosophy } from '@/lib/data/teaching';
+import { courses, teachingPhilosophy, teacherTraining } from '@/lib/data/teaching';
 
 export const metadata = {
   title: 'Teaching',
@@ -46,8 +46,7 @@ export default function TeachingPage() {
             Teaching
           </Typography>
           <Typography variant="h6" sx={{ color: 'text.secondary', fontWeight: 400, maxWidth: 640 }}>
-            Dr. Ramzan teaches courses across undergraduate and postgraduate levels, combining scholarly rigour
-            with an inspiring, inclusive approach to Islamic education.
+            Esma Ramzan teaches courses in linguistics, second language acquisition, and multilingualism, combining theoretical depth with interactive, learner-centered pedagogy.
           </Typography>
         </Container>
       </Box>
@@ -96,15 +95,15 @@ export default function TeachingPage() {
               </Typography>
               <Box sx={{ display: 'flex', gap: 3, flexWrap: 'wrap' }}>
                 <Box sx={{ textAlign: 'center' }}>
-                  <Typography variant="h4" sx={{ color: '#C9A94B', fontWeight: 700, lineHeight: 1 }}>7</Typography>
+                  <Typography variant="h4" sx={{ color: '#C9A94B', fontWeight: 700, lineHeight: 1 }}>{courses.length}</Typography>
                   <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.65)', mt: 0.25 }}>Courses</Typography>
                 </Box>
                 <Box sx={{ textAlign: 'center' }}>
-                  <Typography variant="h4" sx={{ color: '#C9A94B', fontWeight: 700, lineHeight: 1 }}>15+</Typography>
+                  <Typography variant="h4" sx={{ color: '#C9A94B', fontWeight: 700, lineHeight: 1 }}>12+</Typography>
                   <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.65)', mt: 0.25 }}>Years Teaching</Typography>
                 </Box>
                 <Box sx={{ textAlign: 'center' }}>
-                  <Typography variant="h4" sx={{ color: '#C9A94B', fontWeight: 700, lineHeight: 1 }}>500+</Typography>
+                  <Typography variant="h4" sx={{ color: '#C9A94B', fontWeight: 700, lineHeight: 1 }}>1000+</Typography>
                   <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.65)', mt: 0.25 }}>Students</Typography>
                 </Box>
               </Box>
@@ -195,6 +194,63 @@ export default function TeachingPage() {
             {advancedCourses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
+          </Box>
+        </Container>
+      </Box>
+
+      {/* Teacher Training Section */}
+      <Box sx={{ py: { xs: 6, md: 10 }, bgcolor: '#fff' }}>
+        <Container maxWidth="lg">
+          <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1.2fr 1fr' }, gap: { xs: 5, md: 8 }, alignItems: 'center' }}>
+            <Box>
+              <Typography
+                component="span"
+                sx={{
+                  display: 'block',
+                  color: 'secondary.dark',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.14em',
+                  textTransform: 'uppercase',
+                  mb: 1.5,
+                }}
+              >
+                Professional Development
+              </Typography>
+              <Typography variant="h2" sx={{ mb: 3, fontSize: { xs: '1.85rem', md: '2.25rem' } }}>
+                Teacher Professional Development
+              </Typography>
+              <Typography variant="body1" sx={{ color: 'text.secondary', mb: 4, lineHeight: 1.75 }}>
+                Providing impactful professional development workshops for educators, focusing on 21st-century pedagogical skills, digital tools, classroom inclusivity, and teacher wellness.
+              </Typography>
+              
+              <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 600, display: 'block', mb: 1.5, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                Core Training Areas
+              </Typography>
+              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                {teacherTraining.areas.map((area) => (
+                  <Chip key={area} label={area} size="small" variant="outlined" sx={{ fontSize: '0.75rem', py: 1.5, px: 1, borderColor: 'divider', color: 'text.primary', fontWeight: 500 }} />
+                ))}
+              </Box>
+            </Box>
+
+            <Box sx={{ p: 4, bgcolor: '#FAFCFE', border: '1px solid', borderColor: 'divider', borderRadius: 4, textAlign: 'center' }}>
+              <Typography variant="h6" sx={{ color: 'primary.main', fontWeight: 700, mb: 3 }}>
+                Training Impact
+              </Typography>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3.5, alignItems: 'center' }}>
+                {teacherTraining.stats.map((stat) => (
+                  <Box key={stat.label}>
+                    <Typography variant="h3" sx={{ color: 'secondary.dark', fontWeight: 800, mb: 0.5 }}>
+                      {stat.value}
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 500 }}>
+                      {stat.label}
+                    </Typography>
+                  </Box>
+                ))}
+              </Box>
+            </Box>
           </Box>
         </Container>
       </Box>

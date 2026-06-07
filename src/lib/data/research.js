@@ -1,128 +1,114 @@
+export const researchPhilosophy = {
+  text: 'Language is more than a communication system; it is a reflection of identity, culture, knowledge, and social relationships. My research examines how languages are maintained, transformed, and transmitted across generations in multilingual societies. Through language documentation, discourse analysis, and educational research, I explore the intersections of language, technology, and society while contributing to both linguistic scholarship and practical educational outcomes.'
+};
+
 export const researchAreas = [
   {
     id: 1,
-    title: 'Islamic Educational Philosophy',
-    shortTitle: 'Educational Philosophy',
+    title: 'Language Documentation & Endangered Languages',
+    shortTitle: 'Language Documentation',
     description:
-      'Examining the rich pedagogical tradition of classical Islamic scholarship and its relevance for contemporary education. This area explores the theories of knowledge (epistemology), the teacher-student relationship, and the holistic goals of Islamic learning.',
-    icon: '📚',
+      'Focusing on documenting minority and endangered languages in Northern Pakistan. This work captures grammatical structures, lexicons, and oral traditions to preserve linguistic heritage and mitigate language shift in multilingual regions.',
+    icon: '🗣️',
     color: '#1B4F72',
     highlights: [
-      'Classical pedagogy and the ijaza system',
-      'Contemporary applications in Western institutions',
-      'Holistic models of Islamic formation',
-      'Curriculum theory and design',
+      'Documenting endangered languages in Gilgit-Baltistan',
+      'Describing grammatical structures of minor languages',
+      'Preserving oral traditions and cultural heritage',
+      'Supporting indigenous community language archives',
     ],
-    relatedPublications: [1, 2, 8],
   },
   {
     id: 2,
-    title: 'Tafsir & Hadith Methodology',
-    shortTitle: 'Tafsir & Hadith',
+    title: 'Sociolinguistics & Multilingualism',
+    shortTitle: 'Sociolinguistics & Multilingualism',
     description:
-      'A rigorous study of Quranic interpretation (tafsir) and hadith sciences, from their classical foundations to modern scholarly approaches. This research investigates the hermeneutical principles guiding Islamic textual scholarship.',
-    icon: '📖',
+      'Investigating the relationships between language, society, and identity. This area examines code-switching, linguistic attitudes, gendered communication styles, and language shift in multilingual communities.',
+    icon: '💬',
     color: '#2471A3',
     highlights: [
-      'Classical tafsir schools and methodologies',
-      'Isnad criticism and hadith authentication',
-      'Hermeneutics and modern interpretation',
-      'Reconciling classical and critical approaches',
+      'Code-switching patterns in print and digital media',
+      'Linguistic identity and social categorization',
+      'Gender differences in indirectness of conversation',
+      'Language attitudes in minority communities',
     ],
-    relatedPublications: [3],
   },
   {
     id: 3,
-    title: 'Islamic Jurisprudence (Fiqh)',
-    shortTitle: 'Islamic Law',
+    title: 'AI in Language Education',
+    shortTitle: 'AI in Education',
     description:
-      'Exploring the principles and methodologies of Islamic law (usul al-fiqh), with particular attention to contemporary applications. This area examines how classical legal tools — ijtihad, qiyas, and maslaha — can address modern ethical and legal challenges.',
-    icon: '⚖️',
+      'Exploring the integration of artificial intelligence and digital technology in language education. This research examines AI-assisted learning outcomes and digital tools for professional teacher development.',
+    icon: '🤖',
     color: '#154360',
     highlights: [
-      'Usul al-fiqh and legal methodology',
-      'Ijtihad and contemporary legal reasoning',
-      'Bioethics and Islamic law',
-      'Islamic finance and economic justice',
+      'AI-assisted second language acquisition',
+      'Digital pedagogy and 21st-century teaching skills',
+      'Educational software and language learning apps',
+      'Teacher training frameworks for digital classrooms',
     ],
-    relatedPublications: [7],
   },
   {
     id: 4,
-    title: 'Women in Islamic Scholarship',
-    shortTitle: 'Women & Scholarship',
+    title: 'Discourse Analysis',
+    shortTitle: 'Discourse Analysis',
     description:
-      'Recovering and amplifying the voices of women scholars throughout Islamic intellectual history. This research challenges reductive narratives and documents the substantial contributions of female scholars in hadith, jurisprudence, and Sufism.',
-    icon: '🌟',
+      'Analyzing written and spoken language to uncover how identity, power, and culture are constructed in social interactions. Utilizing identity frameworks to study historical and contemporary texts.',
+    icon: '🔍',
     color: '#C9A94B',
     highlights: [
-      'Female hadith transmitters and their legacy',
-      'Women jurists in classical Islam',
-      'Contemporary Muslim women scholars',
-      'Gender and knowledge production',
+      'Identity construction through conversational texts',
+      'Applied discourse analysis methodologies',
+      'Social and cultural frameworks of language use',
+      'Academic and literary discourse studies',
     ],
-    relatedPublications: [4],
-  },
-  {
-    id: 5,
-    title: 'Contemporary Muslim Thought',
-    shortTitle: 'Muslim Thought',
-    description:
-      'Engaging with the diverse landscape of contemporary Islamic intellectual thought. This area covers reformist movements, responses to modernity and postmodernity, and the development of Islamic philosophy in the 20th and 21st centuries.',
-    icon: '💡',
-    color: '#27AE60',
-    highlights: [
-      'Islamic modernism and reformist thought',
-      'Muslim responses to postmodernism',
-      'Identity and belonging in Western contexts',
-      'Decolonial approaches in Islamic studies',
-    ],
-    relatedPublications: [2, 5],
-  },
-  {
-    id: 6,
-    title: 'Interfaith Studies & Dialogue',
-    shortTitle: 'Interfaith Dialogue',
-    description:
-      'Fostering constructive engagement between Islamic scholarship and other religious and philosophical traditions. This area promotes academic discourse as a platform for meaningful interfaith understanding, rooted in mutual respect and intellectual integrity.',
-    icon: '🤝',
-    color: '#8E44AD',
-    highlights: [
-      'Islamic-Christian dialogue',
-      'Abrahamic traditions and shared values',
-      'Academic discourse and peacebuilding',
-      'Ethics of interfaith engagement',
-    ],
-    relatedPublications: [6],
-  },
+  }
 ];
 
 export const currentProjects = [
   {
     id: 1,
-    title: 'The Living Tradition: Classical Islamic Pedagogy in the 21st Century',
-    status: 'Ongoing',
+    title: 'Language Shift in Wakhi: A Case Study from Northern Pakistan',
+    status: 'Under Review',
     description:
-      'A book-length study examining how classical pedagogical principles from the Islamic tradition can be translated and applied within contemporary educational settings, both in Muslim-majority societies and in the West.',
-    fundedBy: 'Arts and Humanities Research Council (AHRC)',
-    timeline: '2023–2026',
+      'A comprehensive sociolinguistic case study examining the shift and endangerment patterns within the Wakhi community of Northern Pakistan, identifying key factors in language maintenance.',
+    fundedBy: 'Karakoram International University / Independent Research',
+    timeline: '2024–Present',
   },
   {
     id: 2,
-    title: 'Voices Recovered: A Biographical Dictionary of Classical Muslim Women Scholars',
-    status: 'Ongoing',
+    title: 'Punjabi as a Foul Language: A Case Study of the Punjabi Christian Community in Gilgit',
+    status: 'Under Review',
     description:
-      'A collaborative research project to compile a comprehensive biographical dictionary of female scholars from the first century of Islam through the Ottoman period, drawing on manuscript collections across multiple countries.',
-    fundedBy: 'British Academy',
-    timeline: '2022–2025',
+      'An empirical study exploring linguistic discrimination, language attitudes, and subsequent language shift among the Punjabi-speaking Christian minority in the Gilgit region.',
+    fundedBy: 'Independent Research',
+    timeline: '2024–Present',
   },
   {
     id: 3,
-    title: 'Islamic Epistemology and the Knowledge Crisis in Modern Education',
-    status: 'Forthcoming',
+    title: 'Acquisition of English Attributive Adjective Order by Saudi EFL Students',
+    status: 'Ongoing',
     description:
-      "A philosophical investigation into how the Islamic concept of 'ilm can serve as a resource for addressing the perceived crisis of meaning and purpose in contemporary education, East and West.",
+      'A research study investigating the acquisition order and learning difficulties of English attributive adjectives among Saudi EFL university students, focusing on first language transfer.',
     fundedBy: 'Independent Research',
-    timeline: '2024–2027',
-  },
+    timeline: '2025–Present',
+  }
 ];
+
+export const researchConsultancy = {
+  expertise: [
+    'Research Proposal Development',
+    'Literature Review Design',
+    'Qualitative Research Methods',
+    'Discourse Analysis',
+    'Academic Writing Support',
+    'APA Referencing',
+    'Thesis and Dissertation Guidance',
+    'Applied Linguistics Research',
+    'Language Education Research'
+  ],
+  stats: [
+    { value: '10+', label: 'Research Clients' },
+    { value: '12+', label: 'Completed Projects' }
+  ]
+};

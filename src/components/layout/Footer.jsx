@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
+import { profile } from '@/lib/data/profile';
 
 const footerLinks = [
   { label: 'About', href: '/about' },
@@ -74,7 +75,7 @@ export default function Footer() {
                 mb: 0.75,
               }}
             >
-              Dr. Esma Ramzan
+              Esma Ramzan
             </Typography>
             <Typography
               sx={{
@@ -86,7 +87,7 @@ export default function Footer() {
                 mb: 2,
               }}
             >
-              Scholar &amp; Educator &amp; Author
+              Applied Linguist &amp; Educator &amp; Trainer
             </Typography>
             <Typography
               sx={{
@@ -96,8 +97,7 @@ export default function Footer() {
                 maxWidth: 400,
               }}
             >
-              Advancing scholarship through rigorous research and inspired teaching.
-              Bridging classical tradition with contemporary academic discourse.
+              {profile.tagline}
             </Typography>
           </Box>
 
@@ -136,7 +136,7 @@ export default function Footer() {
                 </svg>
               </Box>
               <a
-                href="mailto:contact@msesma.com"
+                href={`mailto:${profile.email}`}
                 style={{
                   color: 'rgba(255,255,255,0.75)',
                   textDecoration: 'none',
@@ -144,7 +144,7 @@ export default function Footer() {
                   transition: 'color 0.15s',
                 }}
               >
-                contact@msesma.com
+                {profile.email}
               </a>
             </Box>
 
@@ -168,7 +168,7 @@ export default function Footer() {
                 </svg>
               </Box>
               <Typography sx={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.875rem' }}>
-                United Kingdom
+                {profile.location}
               </Typography>
             </Box>
           </Box>
@@ -266,7 +266,7 @@ export default function Footer() {
               fontSize: { xs: '0.75rem', md: '0.8rem' },
             }}
           >
-            &copy; {currentYear} Dr. Esma Ramzan. All rights reserved.
+            &copy; {currentYear} Esma Ramzan. All rights reserved.
           </Typography>
           <Typography
             sx={{
@@ -275,7 +275,7 @@ export default function Footer() {
               letterSpacing: '0.06em',
             }}
           >
-            Scholar &middot; Educator &middot; Author
+            Applied Linguist &middot; Educator &middot; Trainer
           </Typography>
         </Box>
 

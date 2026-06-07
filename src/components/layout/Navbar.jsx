@@ -12,6 +12,7 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { profile } from "@/lib/data/profile";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -113,7 +114,7 @@ export default function Navbar() {
                 transition: "color 0.3s ease",
               }}
             >
-              Dr. Esma Ramzan
+              Esma Ramzan
             </Typography>
             <Typography
               variant="caption"
@@ -126,7 +127,7 @@ export default function Navbar() {
                 transition: "color 0.3s ease",
               }}
             >
-              Scholar &amp; Educator
+              Applied Linguist &amp; Teacher Trainer
             </Typography>
           </Box>
 
@@ -286,7 +287,7 @@ export default function Navbar() {
             >
               <Image
                 src="/assets/esma1.jpg"
-                alt="Dr. Esma Ramzan"
+                alt="Esma Ramzan"
                 fill
                 sizes="64px"
                 style={{ objectFit: "cover", objectPosition: "center top" }}
@@ -303,7 +304,7 @@ export default function Navbar() {
                   mb: 0.2,
                 }}
               >
-                Dr. Esma Ramzan
+                Esma Ramzan
               </Typography>
               <Typography
                 sx={{
@@ -313,7 +314,7 @@ export default function Navbar() {
                   letterSpacing: "0.04em",
                 }}
               >
-                Scholar &amp; Educator
+                Applied Linguist &amp; Teacher Trainer
               </Typography>
             </Box>
           </Box>
@@ -388,7 +389,7 @@ export default function Navbar() {
           </Typography>
           <Typography
             component="a"
-            href="mailto:contact@msesma.com"
+            href={`mailto:${profile.email}`}
             sx={{
               color: "primary.main",
               fontWeight: 600,
@@ -396,7 +397,7 @@ export default function Navbar() {
               "&:hover": { textDecoration: "underline" },
             }}
           >
-            contact@msesma.com
+            {profile.email}
           </Typography>
         </Box>
       </Drawer>

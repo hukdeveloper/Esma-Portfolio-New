@@ -100,7 +100,8 @@ function PublicationEntry({ pub, isFirst }) {
 
 export default function PublicationsPage() {
   const journalArticles = publications.filter((p) => p.type === 'Journal Article');
-  const bookChapters = publications.filter((p) => p.type === 'Book Chapter');
+  const underReview = publications.filter((p) => p.type === 'Under Review');
+  const ongoingResearch = publications.filter((p) => p.type === 'Ongoing');
 
   return (
     <>
@@ -132,8 +133,7 @@ export default function PublicationsPage() {
             Publications
           </Typography>
           <Typography variant="h6" sx={{ color: 'text.secondary', fontWeight: 400, maxWidth: 600 }}>
-            A complete list of Dr. Ramzan&apos;s published scholarship, including peer-reviewed journal articles
-            and book chapters.
+            A complete list of Esma Ramzan&apos;s research output, including peer-reviewed journal articles, papers currently under review, and ongoing projects.
           </Typography>
 
           {/* Counts */}
@@ -142,7 +142,7 @@ export default function PublicationsPage() {
               <Typography variant="h4" sx={{ color: 'primary.main', fontWeight: 700, lineHeight: 1 }}>
                 {publications.length}
               </Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>Total Publications</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>Total Projects</Typography>
             </Box>
             <Box>
               <Typography variant="h4" sx={{ color: 'primary.main', fontWeight: 700, lineHeight: 1 }}>
@@ -152,9 +152,15 @@ export default function PublicationsPage() {
             </Box>
             <Box>
               <Typography variant="h4" sx={{ color: 'primary.main', fontWeight: 700, lineHeight: 1 }}>
-                {bookChapters.length}
+                {underReview.length}
               </Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>Book Chapters</Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>Under Review</Typography>
+            </Box>
+            <Box>
+              <Typography variant="h4" sx={{ color: 'primary.main', fontWeight: 700, lineHeight: 1 }}>
+                {ongoingResearch.length}
+              </Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>Ongoing</Typography>
             </Box>
           </Box>
         </Container>
@@ -166,7 +172,7 @@ export default function PublicationsPage() {
           <Box sx={{ mb: 8 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 4 }}>
               <Typography variant="h2" sx={{ fontSize: { xs: '1.6rem', md: '2rem' } }}>
-                Journal Articles
+                Peer-Reviewed Publications
               </Typography>
               <Chip
                 label={journalArticles.length}
@@ -183,20 +189,41 @@ export default function PublicationsPage() {
 
           <Divider sx={{ mb: 8 }} />
 
-          {/* Book chapters section */}
-          <Box>
+          {/* Research under review section */}
+          <Box sx={{ mb: 8 }}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 4 }}>
               <Typography variant="h2" sx={{ fontSize: { xs: '1.6rem', md: '2rem' } }}>
-                Book Chapters
+                Research Under Review
               </Typography>
               <Chip
-                label={bookChapters.length}
+                label={underReview.length}
                 size="small"
-                sx={{ bgcolor: 'primary.main', color: '#fff', fontWeight: 700 }}
+                sx={{ bgcolor: 'secondary.main', color: '#fff', fontWeight: 700 }}
               />
             </Box>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2.5 }}>
-              {bookChapters.map((pub, idx) => (
+              {underReview.map((pub) => (
+                <PublicationEntry key={pub.id} pub={pub} isFirst={false} />
+              ))}
+            </Box>
+          </Box>
+
+          <Divider sx={{ mb: 8 }} />
+
+          {/* Ongoing research section */}
+          <Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 4 }}>
+              <Typography variant="h2" sx={{ fontSize: { xs: '1.6rem', md: '2rem' } }}>
+                Ongoing Research
+              </Typography>
+              <Chip
+                label={ongoingResearch.length}
+                size="small"
+                sx={{ bgcolor: 'secondary.dark', color: '#fff', fontWeight: 700 }}
+              />
+            </Box>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2.5 }}>
+              {ongoingResearch.map((pub) => (
                 <PublicationEntry key={pub.id} pub={pub} isFirst={false} />
               ))}
             </Box>

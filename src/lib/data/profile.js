@@ -1,62 +1,106 @@
 export const profile = {
-  name: 'Dr. Esma Ramzan',
+  name: 'Esma Ramzan',
   shortName: 'Esma Ramzan',
-  title: 'Scholar, Educator & Author',
-  tagline: 'Advancing Islamic scholarship through rigorous research and inspired teaching',
-  specializations: ['Islamic Studies', 'Educational Philosophy', 'Comparative Religion'],
-  email: 'contact@msesma.com',
-  location: 'United Kingdom',
-  institution: 'Department of Islamic and Religious Studies',
+  title: 'Applied Linguist | Lecturer in Linguistics | Research Consultant | Teacher Trainer',
+  tagline: 'Preserving linguistic heritage while advancing language education through research, innovation, and community engagement.',
+  specializations: ['Language Documentation', 'Multilingualism', 'Sociolinguistics', 'AI in Language Education'],
+  email: 'esmarsh310@gmail.com',
+  location: 'Lahore, Pakistan',
+  institution: 'Karakoram International University',
 
   bioShort:
-    'Dr. Esma Ramzan is a distinguished scholar and educator with expertise in classical Islamic scholarship, religious philosophy, and innovative educational methodologies. Her work bridges traditional Islamic learning with contemporary academic discourse.',
+    'Applied Linguist, educator, researcher, and teacher trainer with over 12 years of experience in higher education, language teaching, educational leadership, and community development. My work focuses on language documentation, multilingualism, discourse analysis, and AI-assisted language education. Through research, teaching, consultancy, and community engagement, I strive to preserve linguistic diversity while promoting innovative and inclusive learning environments.',
 
   bioLong: [
-    'Dr. Esma Ramzan is a distinguished scholar and educator whose work spans classical Islamic texts, contemporary Muslim thought, and innovative educational methodologies. With a profound commitment to intellectual rigor and pedagogical excellence, she has dedicated her career to advancing Islamic scholarship while making it accessible to diverse audiences.',
-    'Her research examines the rich tradition of Islamic educational philosophy, exploring how classical methodologies can be meaningfully applied in contemporary contexts. Dr. Ramzan\'s interdisciplinary approach draws on religious studies, philosophy, and educational theory to provide nuanced analyses of Islamic intellectual traditions.',
-    'Beyond her research, Dr. Ramzan is a passionate educator who inspires students to engage critically and thoughtfully with Islamic scholarship. She has taught at several leading institutions and continues to mentor the next generation of Islamic studies scholars.',
+    'Esma Ramzan is an Applied Linguist, Lecturer in Linguistics, Research Consultant, and Teacher Trainer with over 12 years of experience in higher education, language teaching, educational leadership, and community development. She currently serves as a Lecturer in Linguistics at Karakoram International University, where she teaches courses in Applied Linguistics, Second Language Acquisition, Bilingualism, Language Endangerment, and Functional English.',
+    'Her research interests include Language Documentation, Multilingualism, Sociolinguistics, Discourse Analysis, and AI in Language Education. She is particularly interested in understanding how language shapes identity, culture, and social interaction, and how minority languages can be documented and preserved in multilingual communities.',
+    'Beyond academia, she actively contributes to teacher professional development, having trained over 100 educators in areas such as inclusive education, digital pedagogy, classroom management, and 21st-century teaching practices. She is also the founder of the Karakoram International University Literary Society, through which she has organized literary and academic events that promote intellectual and cultural engagement.',
+    'Esma is the author of Khwab Sy Haqeeqat Tak (2023), a Hajj travelogue published by Darban Publications. Through her teaching, research, consultancy, and community service, she remains committed to advancing language education, supporting linguistic diversity, and creating meaningful learning opportunities for diverse communities.'
   ],
+
+  academicMission: 'My academic mission is to create meaningful connections between language, education, and society through teaching, research, and professional development. I am committed to fostering critical thinking, supporting teacher growth, and contributing to educational practices that empower learners from diverse linguistic and cultural backgrounds.',
+
+  researchMission: 'My research explores the relationship between language, identity, culture, and education, with a particular focus on language documentation, multilingualism, discourse analysis, and AI-assisted language learning. I aim to contribute to the preservation of linguistic diversity while developing innovative approaches to language teaching and learning.',
 
   education: [
     {
-      degree: 'PhD, Islamic Studies',
-      institution: 'University of Birmingham',
+      degree: 'M.Phil. Applied Linguistics',
+      institution: 'University of Management and Technology',
+      year: '2020',
+      thesis: 'Discourse Analysis of Hazrat Inayat Khan’s Selected Lectures through James Paul Gee’s Identity Framework'
+    },
+    {
+      degree: 'MA English Linguistics and Literature',
+      institution: 'University of Education',
       year: '2012',
-      thesis: 'Classical Pedagogical Methodologies in Islamic Scholarship and Their Contemporary Applications',
+      thesis: 'Code Switching in Urdu Newspapers: A Case Study of English Language Use'
     },
     {
-      degree: 'MA, Religious Philosophy',
-      institution: 'University of Edinburgh',
-      year: '2007',
+      degree: 'B.Ed.',
+      institution: 'University of Education',
+      year: '2011'
     },
     {
-      degree: 'BA (Hons), Arabic and Islamic Studies',
-      institution: 'University of Leeds',
-      year: '2005',
+      degree: 'TEFL Certification',
+      institution: 'Serious TEFL',
+      year: '2021'
     },
+    {
+      degree: 'Online English Teaching Certification',
+      institution: 'TEFL Institute of Ireland',
+      year: '2021'
+    }
+  ],
+
+  careerTimeline: [
+    {
+      years: '2012–2014',
+      role: 'Lecturer, English',
+      institution: 'Govt. Post Graduate College for Women, Lahore'
+    },
+    {
+      years: '2014–2021',
+      role: 'Principal',
+      institution: 'Qadam Community Trust'
+    },
+    {
+      years: '2014–Present',
+      role: 'Director Operations',
+      institution: 'Dream to Education For All (DEFA)'
+    },
+    {
+      years: '2017–Present',
+      role: 'CEO',
+      institution: 'Little Warriors Never Give Up'
+    },
+    {
+      years: '2021–Present',
+      role: 'Lecturer, Linguistics',
+      institution: 'Karakoram International University'
+    }
   ],
 
   researchInterests: [
-    'Islamic Educational Philosophy',
-    'Classical Islamic Jurisprudence',
-    'Contemporary Muslim Thought',
-    'Interfaith Dialogue',
-    'Women in Islamic Scholarship',
-    'Religious Identity and Modernity',
-    'Tafsir and Hadith Methodology',
+    'Language Documentation',
+    'Language Endangerment',
+    'Multilingualism',
+    'Bilingualism',
+    'Discourse Analysis',
+    'AI in Language Education',
+    'Second Language Acquisition',
+    'Teacher Education'
   ],
 
   socialLinks: [
-    { label: 'Academia.edu', href: '#', icon: 'academia' },
-    { label: 'ResearchGate', href: '#', icon: 'researchgate' },
     { label: 'LinkedIn', href: '#', icon: 'linkedin' },
-    { label: 'Twitter / X', href: '#', icon: 'twitter' },
+    { label: 'ResearchGate', href: '#', icon: 'researchgate' },
+    { label: 'ORCID', href: '#', icon: 'orcid' }
   ],
 
   stats: [
-    { value: '15+', label: 'Years of Teaching' },
-    { value: '40+', label: 'Publications' },
-    { value: '500+', label: 'Students Mentored' },
-    { value: '12', label: 'Countries Spoken In' },
-  ],
+    { value: '12+', label: 'Years Experience' },
+    { value: '1000+', label: 'Students Taught' },
+    { value: '100+', label: 'Teachers Trained' },
+    { value: '10+', label: 'Consultancy Projects' }
+  ]
 };
