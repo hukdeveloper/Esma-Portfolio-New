@@ -43,31 +43,6 @@ export default function GalleryPage() {
           <Typography variant="h6" sx={{ color: 'text.secondary', fontWeight: 400, maxWidth: 600, fontSize: { xs: '1rem', md: '1.2rem' } }}>
             Visual highlights from teacher training workshops, theatrical plays, poetic symposia, and community engagement programs during Esma Ramzan's professional journey.
           </Typography>
-
-          {/* Category counts */}
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3, mt: 4 }}>
-            {categories.slice(1).map((cat) => {
-              const count = galleryImages.filter((img) => img.category === cat).length;
-              return (
-                <Box key={cat}>
-                  <Typography variant="h5" sx={{ color: 'primary.main', fontWeight: 700, lineHeight: 1 }}>
-                    {count}
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.25 }}>
-                    {cat}
-                  </Typography>
-                </Box>
-              );
-            })}
-            <Box>
-              <Typography variant="h5" sx={{ color: 'primary.main', fontWeight: 700, lineHeight: 1 }}>
-                {galleryImages.length}
-              </Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.25 }}>
-                Total Photos
-              </Typography>
-            </Box>
-          </Box>
         </Container>
       </Box>
 
