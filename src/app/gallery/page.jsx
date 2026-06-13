@@ -7,7 +7,7 @@ import { galleryImages, categories } from '@/lib/data/gallery';
 export const metadata = {
   title: 'Gallery',
   description:
-    'Photo gallery of Dr. Esma Ramzan — book launch ceremonies, academic talks, speaking events, and key moments from her scholarly journey.',
+    'Photo gallery of Esma Ramzan — teacher training workshops, plays, poetic symposia, and community engagement programs.',
 };
 
 export default function GalleryPage() {
@@ -41,8 +41,7 @@ export default function GalleryPage() {
             Gallery
           </Typography>
           <Typography variant="h6" sx={{ color: 'text.secondary', fontWeight: 400, maxWidth: 600, fontSize: { xs: '1rem', md: '1.2rem' } }}>
-            Highlights from book launch ceremonies, academic workshops, speaking engagements,
-            and key moments from Dr. Ramzan&apos;s journey as a scholar and author.
+            Visual highlights from teacher training workshops, theatrical plays, poetic symposia, and community engagement programs during Esma Ramzan's professional journey.
           </Typography>
 
           {/* Category counts */}

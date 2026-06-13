@@ -9,7 +9,7 @@ import { profile } from '@/lib/data/profile';
 export const metadata = {
   title: 'Contact',
   description:
-    'Get in touch with Dr. Esma Ramzan — for research inquiries, speaking invitations, media requests, or academic collaboration.',
+    'Get in touch with Esma Ramzan — for research inquiries, speaking invitations, media requests, or academic collaboration.',
 };
 
 const contactReasons = [
@@ -50,8 +50,8 @@ export default function ContactPage() {
             Contact
           </Typography>
           <Typography variant="h6" sx={{ color: 'text.secondary', fontWeight: 400, maxWidth: 600 }}>
-            Dr. Ramzan welcomes messages from fellow scholars, students, journalists, and anyone with a genuine
-            interest in Islamic scholarship.
+            Esma Ramzan welcomes messages from fellow scholars, students, journalists, and anyone with a genuine
+            interest in linguistics and language education.
           </Typography>
         </Container>
       </Box>
@@ -71,7 +71,7 @@ export default function ContactPage() {
                 Get in Touch
               </Typography>
               <Typography variant="body1" sx={{ color: 'text.secondary', mb: 4 }}>
-                Please use the form or reach out directly via email. Dr. Ramzan typically responds within five
+                Please use the form or reach out directly via email. Esma Ramzan typically responds within five
                 working days.
               </Typography>
 
